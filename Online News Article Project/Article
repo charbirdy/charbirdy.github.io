@@ -1,14 +1,29 @@
-<p>Charlotte Byrdy</p>
-<h1>New Impressionism Museum Opens</h1>
-<h2>About The Museum</h2>
-<p>After years of construction and building, a new museum is coming near you to show the history and works of Impressionism. Opening at around 10:00 Am, visitors are exploring the history and works of Impressionists over the last hundred years. But first, what even is Impressionism? Read below to have a brief history explained to you in under one minute.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Impressionism Museum Opens</title>
+</head>
+<body>
+  <header>
+  <p><strong>Museum Information With History</strong></p>
+<main>
+  <article>
+    <h2>About The Museum</h2>
+    <p>After years of construction and building, a new museum is coming near you to show the history and works of Impressionism. Opening at around 10:00 Am, visitors are exploring the history and works of Impressionists over the last hundred years. But first, what even is Impressionism? Read below to have a brief history explained to you in under one minute.
 <hr/>
-<h3>What is Impressionism?</h3>
-<p><b>Impressionism</b> is an art movement that came from the late 18th century in Paris, France, where it focused on capturing moments in life through colors and light. It influenced Post-Impressionism and Neo-Impressionism, whereas famous artists like Vincent Van Gogh developed their style through these.</p> 
-<h3>How It Came to Life</h3>
-<p>This began in 1860s where a group of painters containing Claude Monet, Pierre-Auguste Renoir, and Camille Pissarro started to paint against strict art academic rules. Instead of following standard artist techniques, they came up with their own and started to paint moments of everyday life with visible brushstrokes. As said by Claude Monet, <q>Impressionism is only direct sensation</q>.</p>
-<h3>The Name's Origin</h3>
-<p>In an 1874 art exhibition, Louis Leroy Tom took a glance at a painting by Claude Monet, titled <i>"Impression, Soleil Levant"</i>, which translates to "Impression, Sunrise". Meant as an insult, he would comment that it was an "impression" rather than a finished piece. Instead of taking it for word, artists decided to use it as the label used today, Impressionism.</p>
+      <h3>What is Impressionism?</h3>
+      <p><b>Impressionism</b> is an art movement that came from the late 18th century in Paris, France, where it focused on capturing moments in life through colors and light. It influenced Post-Impressionism and Neo-Impressionism, whereas famous artists like Vincent Van Gogh developed their style through these.</p> 
+      <h3>How It Came to Life</h3>
+      <p>This began in 1860s where a group of painters containing Claude Monet, Pierre-Auguste Renoir, and Camille Pissarro started to paint against strict art academic rules. Instead of following standard artist techniques, they came up with their own and started to paint moments of everyday life with visible brushstrokes. As said by Claude Monet, <q>Impressionism is only direct sensation</q>.</p>
+      <h3>The Name's Origin</h3>
+      <p>In an 1874 art exhibition, Louis Leroy Tom took a glance at a painting by Claude Monet, titled <i>"Impression, Soleil Levant"</i>, which translates to "Impression, Sunrise". Meant as an insult, he would comment that it was an "impression" rather than a finished piece. Instead of taking it for word, artists decided to use it as the label used today, Impressionism.</p>
 <hr/>
-<h2>About The Museum CONTINUED</h2>
-<p>Now that you have some knowledge of Impressionism, don't be afraid to visit these wonderous works. With the purchase of a ticket, people can step into history itself and the revolutionary works of artists who think alike. Step into the mind of these painters and experience their masterpieces. 
+    <h2>About The Museum CONTINUED</h2>
+    <p>Now that you have some knowledge of Impressionism, don't be afraid to visit these wonderous works. With the purchase of a ticket, people can step into history itself and the revolutionary works of artists who think alike. Step into the mind of these painters and experience their masterpieces.</p>
+</article>
+<p><a href="index.html">Back to Homepage</a></p>
+</main>
+</body>
+</html>
