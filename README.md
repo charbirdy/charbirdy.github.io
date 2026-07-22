@@ -5,4 +5,4 @@
 <a href="math_test_form_assignment.html">Math Test Form Assignment</a>
 <a href="testing.html">Testing</a>
 <a href="color_scheme.html">Color Scheme Assignment</a>
-<a href="restaurant_menu.html"Restaurant Menu</a>
+<a href="restaurant_menu.html">Restaurant Menu</a>
