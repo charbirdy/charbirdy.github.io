@@ -1,1 +1,102 @@
 <p>Charlotte Byrdy</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Daily Schedule</title>
+
+  <style>
+    /* 1. Modifies the entire table */
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 2. Modifies the table headers */
+    th {
+      background-color: #4CAF50;
+      color: white;
+      font-size: 18px;
+      padding: 12px;
+      text-transform: uppercase;
+    }
+
+    /* 3. Modifies all table cells (both header and data cells) */
+    th, td {
+      border: 1px solid #ddd;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* 4. Modifies at least one column (the 'Time' column) using a Class */
+    .time-column {
+      background-color: #f0f8ff;
+      font-weight: bold;
+      width: 30%;
+    }
+
+    /* 5. Modifies at least one row (Lunch/Break row) using an ID */
+    #lunch-row {
+      background-color: #ffe4b5;
+      font-style: italic;
+    }
+
+    /* Bonus: Hover effect for standard rows */
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align: center; font-family: Arial, sans-serif;">Daily Schedule App</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Task / Event</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="time-column">7:00 AM</td>
+        <td>Wake up & Morning Stretch</td>
+      </tr>
+      <tr>
+        <td class="time-column">8:00 AM</td>
+        <td>Eat Breakfast</td>
+      </tr>
+      <tr>
+        <td class="time-column">9:00 AM</td>
+        <td>Walk the Dog</td>
+      </tr>
+      <tr>
+        <td class="time-column">10:30 AM</td>
+        <td>Study Web Development</td>
+      </tr>
+      <tr id="lunch-row">
+        <td class="time-column">12:30 PM</td>
+        <td>Lunch & Power Nap</td>
+      </tr>
+      <tr>
+        <td class="time-column">2:00 PM</td>
+        <td>Grocery Shopping (Errand)</td>
+      </tr>
+      <tr>
+        <td class="time-column">5:00 PM</td>
+        <td>Workout / Gym</td>
+      </tr>
+      <tr>
+        <td class="time-column">7:00 PM</td>
+        <td>Dinner & Relax</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
