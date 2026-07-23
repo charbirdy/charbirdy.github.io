@@ -4,16 +4,12 @@
       width: 80%;
       margin: 20px auto;
       border-collapse: collapse;
-      font-family: Arial, sans-serif;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     th {
-      background-color: #4CAF50;
       color: white;
       font-size: 18px;
       padding: 12px;
-      text-transform: uppercase;
     }
 
     th, td {
@@ -23,27 +19,21 @@
     }
 
     .time-column {
-      background-color: #f0f8ff;
       font-weight: bold;
       width: 30%;
-    }
-
-    #lunch-row {
-      background-color: #ffe4b5;
-      font-style: italic;
     }
     
   </style>
 </head>
 <body>
 
-  <h2 style="text-align: center; ">Schedule</h2>
+  <h2>Schedule</h2>
 
   <table>
     <thead>
       <tr>
         <th>Time</th>
-        <th>Task / Event</th>
+        <th>To Do</th>
       </tr>
     </thead>
     <tbody>
@@ -65,7 +55,7 @@
       </tr>
       <tr id="lunch-row">
         <td class="time-column">12:30 PM</td>
-        <td>Lunch & Power Nap</td>
+        <td>Lunch</td>
       </tr>
       <tr>
         <td class="time-column">2:00 PM</td>
@@ -81,6 +71,3 @@
       </tr>
     </tbody>
   </table>
-
-</body>
-</html>
