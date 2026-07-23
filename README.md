@@ -6,3 +6,4 @@
 <a href="testing.html">Testing</a>
 <a href="color_scheme.html">Color Scheme Assignment</a>
 <a href="restaurant_menu.html">Restaurant Menu</a>
+<a href="stylish_schedule.html">Stylish Schedule</a>
