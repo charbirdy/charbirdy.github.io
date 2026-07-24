@@ -5,100 +5,149 @@
 }
 
 body {
-  font-family: Ariel;
+  font-family: Arial, sans-serif;
   min-height: 100vh;
   padding: 20px;
-  background-color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 h1 {
-  color: black;
-  margin-bottom: 10px;
+  color: white;
+  margin-bottom: 20px;
   text-align: center;
   font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  background: white;
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-th {
-  background-color: darkgray;
-  color: black;
-  padding: 15px;
-  text-align: center;
-  font-weight: 600;
-  border: 2px solid black;
-}
-
-tbody tr:hover {
-  background-color: #f0f4ff;
-  transition: background-color 0.3s ease;
-}
-
-tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-tbody tr:nth-child(even):hover {
-  background-color: #e8f0ff;
-}
-
-input[type="number"],
-input[type="text"] {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 1em;
-  text-align: center;
-}
-
-input[type="number"]:focus,
-input[type="text"]:focus {
-  outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
-}
-
-.score-label {
-  font-weight: bold;
-  color: #333;
-}
-
+/* Navigation Links with pseudo-classes */
 .nav-links {
   text-align: center;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .nav-links a {
   display: inline-block;
-  margin: 0 15px;
-  padding: 10px 20px;
+  padding: 12px 24px;
   background-color: #667eea;
   color: white;
   text-decoration: none;
   border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
 .nav-links a:hover {
   background-color: #764ba2;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(118, 75, 162, 0.4);
 }
 
 .nav-links a.active {
   background-color: #764ba2;
   font-weight: bold;
+  border-color: white;
+  box-shadow: 0 4px 12px rgba(118, 75, 162, 0.6);
 }
 
-td:first-child,
-th:first-child {
-  border-color: 3px solid black;
+/* Table Styling with visible borders */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border: 2px solid #333;
 }
 
-.container {
-  max-width: 600px;
-  margin: 0 auto;
+th,
+td {
+  border: 1px solid #333;
+  padding: 12px;
+  text-align: center;
+  height: 50px;
+  width: auto;
+}
+
+th {
+  background-color: #667eea;
+  color: white;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+/* Alternating row colors with pseudo-classes */
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f0f4ff;
+}
+
+tbody tr:hover {
+  background-color: #e8f0ff;
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:first-child {
+  border-top: 2px solid #333;
+}
+
+tbody tr:last-child {
+  border-bottom: 2px solid #333;
+}
+
+/* Input Fields */
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+  outline: 2px solid #667eea;
+  outline-offset: -2px;
+  background-color: #fffacd;
+  box-shadow: inset 0 0 5px rgba(102, 126, 234, 0.3);
+}
+
+/* Player name column styling */
+.player-name {
+  font-weight: 600;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* Total column styling - now displays as text input */
+.total-cell {
+  font-weight: 700;
+  background-color: #fffacd;
+  color: #333;
+  padding: 0;
+}
+
+.total-cell input[type="text"] {
+  background-color: #fffacd;
+  font-weight: 700;
+  border: none;
 }
