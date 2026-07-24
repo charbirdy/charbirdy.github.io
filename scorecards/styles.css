@@ -97,7 +97,5 @@ td:first-child,
 th:first-child {
   text-align: left;
   font-weight: 600;
-  background-color: #purple;
-  border-right: 3px solid darkgray;
-  border-bottom: 2px solid darkgray;
+  border-color: 3px solid black;
 }
