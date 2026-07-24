@@ -56,7 +56,6 @@ td {
   border: 1px solid #ddd;
 }
 
-/* First column styling */
 td:first-child,
 th:first-child {
   text-align: left;
@@ -64,13 +63,11 @@ th:first-child {
   background-color: #f8f9fa;
 }
 
-/* Pseudo-class: hover effect on table rows */
 tbody tr:hover {
   background-color: #f0f4ff;
   transition: background-color 0.3s ease;
 }
 
-/* Alternating row colors for better readability */
 tbody tr:nth-child(even) {
   background-color: #f9f9f9;
 }
