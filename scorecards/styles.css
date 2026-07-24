@@ -20,14 +20,6 @@ h1 {
   text-shadow: none;
 }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-}
-
 table {
   width: 100%;
   border-collapse: collapse;
