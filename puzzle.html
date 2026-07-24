@@ -3,9 +3,7 @@
 <h2>Puzzle: Fish</h2>
 <p>Date completed: 7-24-26</p>
 <hr>
-</style>
 <section class="puzzle-piece">
-</div>
   <img src="puzzle/fish_a.jpg" alt="fish a" class="puzzle">
   <img src="puzzle/fish_b.jpg" alt="fish b" class="puzzle">
   <img src="puzzle/fish_c.jpg" alt="fish c" class="puzzle">
@@ -15,10 +13,9 @@
   <img src="puzzle/fish_g.jpg" alt="fish g" class="puzzle">
   <img src="puzzle/fish_i.jpg" alt="fish i" class="puzzle">
   <img src="puzzle/fish_j.jpg" alt="fish j" class="puzzle">
-</div>
 </section>
 
-<div class="hide-puzzle"
+<div class="hide-puzzle">
   <img src="puzzle/fish_h.jpg" alt="fish h" class="hide-puzzle">
 </div>
 
@@ -27,10 +24,7 @@ section.puzzle-piece {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  justify-content: center;
-  align-items: start;
-  column-gap: 0;
-  row-gap: 0;
+  gap: 0;
   padding: 0;
   margin: 0;
 }
@@ -38,15 +32,15 @@ section.puzzle-piece {
 
 <style>
 .puzzle {
-  flex: 0 1 auto;  
-  width: 300px;
-  height: auto;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 </style>
 
 <style>
-  .hide-puzzle {
+.hide-puzzle {
   visibility: hidden;
 }
 </style>
