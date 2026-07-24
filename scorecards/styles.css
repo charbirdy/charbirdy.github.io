@@ -57,7 +57,6 @@ h1 {
   border-color: #666;
 }
 
-/* Table Styling with visible borders */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -85,15 +84,6 @@ th {
   vertical-align: middle;
 }
 
-/* Alternating row colors with pseudo-classes */
-tbody tr:nth-child(odd) {
-  background-color: #ffffff;
-}
-
-tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
 
 tbody tr:first-child {
   border-top: 2px solid #333;
@@ -103,7 +93,6 @@ tbody tr:last-child {
   border-bottom: 2px solid #333;
 }
 
-/* Input Fields */
 input[type="number"],
 input[type="text"] {
   width: 100%;
@@ -124,7 +113,6 @@ input[type="text"]:focus {
   background-color: #f0f0f0;
 }
 
-/* Player name column styling */
 .score-label {
   font-weight: 600;
   color: #333;
@@ -132,7 +120,6 @@ input[type="text"]:focus {
   padding: 0;
 }
 
-/* Total column styling - now displays as text input */
 .total-cell {
   font-weight: 700;
   background-color: #f5f5f5;
