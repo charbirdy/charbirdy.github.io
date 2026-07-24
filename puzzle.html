@@ -1,14 +1,16 @@
 <p>Charlotte Byrdy</p>
 <hr>
-<section class="grid-container">
-    <div class="grid-item">
+<section class="name"
+    <div class="grid-name">
         Charlotte Byrdy
     </div>
+</section>
+<section class="puzzle-info">
     <div class="grid-item">
         Puzzle: Fish
     </div>
     <div class="grid-item">
-        7-24-26
+       Completed: 7-24-26
     </div>
 </section>
 <hr>
@@ -60,10 +62,8 @@ section.puzzle-piece {
     grid-column-start: 1;
     grid-column-end: 3;
   }
-</style>
 
-<style>
-    section.grid-container {
+    section.puzzle-info {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-row: repeat(1, 1fr);
@@ -71,6 +71,21 @@ section.puzzle-piece {
         background-color: lightblue;
     }
     section div.grid-item {
+        background-color: white;
+        border: 1px;
+        padding: 5px;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    section.name {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-row: repeat(1, 1fr);
+        padding: 10px;
+        background-color: blue;
+    }
+    section div.grid-name {
         background-color: white;
         border: 1px;
         padding: 5px;
