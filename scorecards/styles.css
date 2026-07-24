@@ -97,3 +97,8 @@ td:first-child,
 th:first-child {
   border-color: 3px solid black;
 }
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
