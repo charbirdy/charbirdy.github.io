@@ -10,5 +10,5 @@
 <li><a href="stylish_schedule.html">Stylish Schedule</a></li>
 <li><a href="team_page.html">Team Page</a></li>
 <li><a href="puzzle.html">Puzzle</a></li>
-<li><a href="scorecards1.html">Scorecards</a></li>
+<li><a href="scorecards3.html">Scorecards</a></li>
 </ul>
