@@ -1,1 +1,27 @@
+<p>Charlotte Byrdy</p>
 
+<div class="puzzle-container">
+  <img src="path/to/puzzle3_A.jpg" alt="Puzzle piece A" class="puzzle-item">
+  <img src="path/to/puzzle3_B.jpg" alt="Puzzle piece B" class="puzzle-item">
+  <img src="path/to/puzzle3_D.jpg" alt="Puzzle piece D" class="puzzle-item">
+  <img src="path/to/puzzle3_F.jpg" alt="Puzzle piece F" class="puzzle-item">
+  <img src="path/to/puzzle3_H.jpg" alt="Puzzle piece H" class="puzzle-item">
+  <img src="path/to/puzzle3_J.jpg" alt="Puzzle piece J" class="puzzle-item">
+</div>
+
+.puzzle-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.puzzle-item {
+  flex: 0 1 auto;  /* or: flex: 0 1 200px; */
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
