@@ -95,7 +95,5 @@ input[type="text"]:focus {
 
 td:first-child,
 th:first-child {
-  text-align: left;
-  font-weight: 600;
   border-color: 3px solid black;
 }
