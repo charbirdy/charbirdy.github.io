@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.subtitle {
+  color: #666;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+}
+
+th {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-weight: 600;
+  border: 2px solid #667eea;
+}
+
+td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* First column styling */
+td:first-child,
+th:first-child {
+  text-align: left;
+  font-weight: 600;
+  background-color: #f8f9fa;
+}
+
+/* Pseudo-class: hover effect on table rows */
+tbody tr:hover {
+  background-color: #f0f4ff;
+  transition: background-color 0.3s ease;
+}
+
+/* Alternating row colors for better readability */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even):hover {
+  background-color: #e8f0ff;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  text-align: center;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+}
+
+.score-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #999;
+  font-size: 0.9em;
+}
+
+.nav-links {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.nav-links a {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 10px 20px;
+  background-color: #667eea;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #764ba2;
+}
+
+.nav-links a.active {
+  background-color: #764ba2;
+  font-weight: bold;
+}
