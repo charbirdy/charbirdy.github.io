@@ -17,5 +17,5 @@
     <li><a href="scorecards/scorecards3.html">Scorecard 3</a></li>
     <li><a href="scorecards/scorecards1.html">Scorecard Style</a></li>
   </ul>
-  <li><a href="tutorial.html">Video Tutorial</a></li>
+  <li><a href="tutorial/tutorial.html">Video Tutorial</a></li>
   </ul>
