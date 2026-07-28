@@ -18,4 +18,5 @@
     <li><a href="scorecards/scorecards1.html">Scorecard Style</a></li>
   </ul>
   <li><a href="tutorial/tutorial.html">Video Tutorial</a></li>
+  <li><a href="imitation/imitation.hrml">Imitation</a></li>
   </ul>
