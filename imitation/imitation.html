@@ -54,9 +54,35 @@
   }
 </style>
 
+<div>
+ <div class="stage-container">
   <img src="img/stage.png" class="stage">
+  <p class="stage-text">Presenting</p>
+</div>
+
 <style>
+  .stage-container {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+  }
+
   .stage {
     -webkit-filter: blur(5px);
-    filter: blur(5px):
+    filter: blur(5px);
+    width: 100%;
+    height: 100%;
+  }
+
+  .stage-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    margin: 0;
+  }
 </style>
+
