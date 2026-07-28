@@ -35,9 +35,14 @@
   <img src="img/seagull.png" class="seagull">
 <style>
   .seagull {
-  background-image: url(img/seagull.png)
-  background-color: linear-gradient(45deg, mediumslateblue, white);
-  }
+  background-image: url('img/seagull.png'), linear-gradient(45deg, mediumslateblue, white);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, center center;
+  background-size: contain, cover; 
+  width: 300px;
+  height: 200px;
+  display: inline-block;
+}
 </style>
 <img src="img/butterfly.png">
 <img src="img/stage.png">
