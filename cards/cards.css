@@ -86,16 +86,6 @@ h1 {
         gap: 15px;
     }
 
-    h1 {
-        font-size: 1.8em;
-        margin-bottom: 30px;
-    }
-
-    .card {
-        height: 250px;
-    }
-}
-
 .intro {
     position: fixed;
     top: 24px;
