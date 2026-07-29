@@ -41,10 +41,6 @@ h1 {
     position: relative;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-}
-
 .card-inner {
     position: relative;
     width: 100%;
