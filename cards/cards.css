@@ -93,6 +93,9 @@ h1 {
     animation: introAnim 2.2s ease forwards;
     z-index: 9999;
     pointer-events: none;
+    opacity: 0;
+    animation: introAnim 2.2s ease forwards;
+    animation-iteration-count: 1;
 }
 
 @keyframes introAnim {
