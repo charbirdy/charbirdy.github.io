@@ -99,7 +99,6 @@ h1 {
 }
 
 @keyframes introAnim {
-   @keyframes introAnim {
     0% {
         opacity: 0;
         transform: translateX(-50%) translateY(-12px) scale(0.98);
