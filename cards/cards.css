@@ -101,6 +101,8 @@ h1 {
     border-radius: 8px;
     font-weight: 700;
     animation: introAnim 2.2s ease forwards;
+    z-index: 9999;
+    pointer-events: none;
 }
 
 @keyframes introAnim {
