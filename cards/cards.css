@@ -80,7 +80,7 @@ h1 {
 }
 
 .card-back {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background: dimgray;
     color: white;
     font-size: 1.1em;
     transform: rotateY(180deg);
