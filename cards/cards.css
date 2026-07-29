@@ -111,8 +111,8 @@ h1 {
         transform: translateX(-50%) translateY(0) scale(1);
     }
     100% {
-        opacity: 0; /* change to 1 if you want the title to stay visible */
+        opacity: 0;
         transform: translateX(-50%) translateY(-12px) scale(0.98);
     }
 }
-}
+
