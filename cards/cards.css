@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: dimgray;
+    background: aliceblue;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -71,14 +71,14 @@ h1 {
 }
 
 .card-front {
-    background: dodgerblue;
+    background: dimgray;
     color: white;
     font-weight: bold;
     font-size: 1.2em;
 }
 
 .card-back {
-    background: aliceblue;
+    background: dodgerblue;
     color: white;
     font-size: 1.1em;
     transform: rotateY(180deg);
