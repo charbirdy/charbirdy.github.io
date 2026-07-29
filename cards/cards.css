@@ -63,13 +63,13 @@ h1 {
 
 .card-face {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;                 /* center with flexbox */
-    align-items: center;           /* vertical centering */
-    justify-content: center;       /* horizontal centering */
+    inset: 0;                  /* shorthand for top/right/bottom/left = 0 */
+    display: flex;
+    flex-direction: column;    /* ensure vertical axis is the one we center on */
+    justify-content: center;   /* vertical centering */
+    align-items: center;       /* horizontal centering */
     padding: 30px;
-    text-align: center;            /* wrap/center multi-line text */
+    text-align: center;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 }
