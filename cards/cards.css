@@ -80,9 +80,6 @@ h1 {
     transform: rotateY(180deg);
 }
 
- .card {
-        height: 250px;
-    }
 
 @media (max-width: 768px) {
     .cards-grid {
