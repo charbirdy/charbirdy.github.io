@@ -5,7 +5,6 @@
     <title>Flashcards</title>
 </head>
 <body>
-    <!-- Intro title that plays once on load -->
     <div class="intro" aria-hidden="true">📚 Flashcards</div>
 
     <div class="container">
@@ -15,10 +14,10 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-face card-front">
-                        <div>What is 2 + 2?</div>
+                        <div>What is an HTML element?</div>
                     </div>
                     <div class="card-face card-back">
-                        <div>4</div>
+                        <div>A webpage component that is displayed after parsing the HTML code</div>
                     </div>
                 </div>
             </div>
@@ -27,10 +26,10 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-face card-front">
-                        <div>What is the capital of France?</div>
+                        <div>CSS is an acronym for?</div>
                     </div>
                     <div class="card-face card-back">
-                        <div>Paris</div>
+                        <div>Cascading Style Sheets</div>
                     </div>
                 </div>
             </div>
@@ -39,10 +38,10 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-face card-front">
-                        <div>What is H2O?</div>
+                        <div>What is HTML's main function?</div>
                     </div>
                     <div class="card-face card-back">
-                        <div>Water</div>
+                        <div>To structure a website's content</div>
                     </div>
                 </div>
             </div>
@@ -51,10 +50,10 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-face card-front">
-                        <div>Who wrote Romeo and Juliet?</div>
+                        <div>HTML is an acronym for?</div>
                     </div>
                     <div class="card-face card-back">
-                        <div>William Shakespeare</div>
+                        <div>HyperText Markup Language</div>
                     </div>
                 </div>
             </div>
@@ -63,10 +62,10 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-face card-front">
-                        <div>What is the largest planet?</div>
+                        <div>How is an HTML opening tag written?</div>
                     </div>
                     <div class="card-face card-back">
-                        <div>Jupiter</div>
+                        <div>A key word inside angle brackets</div>
                     </div>
                 </div>
             </div>
@@ -75,10 +74,10 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-face card-front">
-                        <div>What year did the Titanic sink?</div>
+                        <div>Elements that don't require a seperate closing tage are called__</div>
                     </div>
                     <div class="card-face card-back">
-                        <div>1912</div>
+                        <div>Void elements</div>
                     </div>
                 </div>
             </div>
@@ -87,10 +86,10 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-face card-front">
-                        <div>What is the smallest prime number?</div>
+                        <div>Nesting refers to___</div>
                     </div>
                     <div class="card-face card-back">
-                        <div>2</div>
+                        <div>Placing one element inside another</div>
                     </div>
                 </div>
             </div>
@@ -99,10 +98,10 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-face card-front">
-                        <div>What does HTML stand for?</div>
+                        <div>What tells the browser where an element ends?</div>
                     </div>
                     <div class="card-face card-back">
-                        <div>HyperText Markup Language</div>
+                        <div>A closing tag</div>
                     </div>
                 </div>
             </div>
@@ -110,12 +109,11 @@
     </div>
 
     <script>
-        // Remove the intro element after its animation completes so it doesn't stick around
+        
         document.addEventListener('DOMContentLoaded', function () {
             const intro = document.querySelector('.intro');
             if (!intro) return;
             intro.addEventListener('animationend', function () {
-                // Remove from DOM so it doesn't block anything and screen readers ignore it
                 intro.remove();
             });
         });
