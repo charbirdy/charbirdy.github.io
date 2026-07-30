@@ -20,4 +20,5 @@
   <li><a href="tutorial/tutorial.html">Video Tutorial</a></li>
   <li><a href="imitation/imitation.html">Imitation</a></li>
   <li><a href="cards/cards.html">Cards</a></li>
+  <li><a href="project/project.html">Project</a></li>
   </ul>
