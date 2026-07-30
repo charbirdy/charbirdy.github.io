@@ -1,11 +1,7 @@
-<p>Charlotte Byrdy</p>
-    <style>
   h2, h3 {
     color: lightblue
   }
-</style>
 
-<style>
   .fixed-box {
     position:fixed;
     right:0px;
@@ -16,9 +12,6 @@
     background-color: white
     text-align: center;
   }
-</style>
-<style>
-  a {
+a {
     display: block;
   }
-</style>
