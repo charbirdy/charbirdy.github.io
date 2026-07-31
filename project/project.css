@@ -1,4 +1,7 @@
-/*PROJECT 1*/
+/* ==========================================
+   PROJECT 1 - Fixed Box Styling
+   ========================================== */
+
 h2, h3 {
   color: lightblue;
 }
@@ -18,10 +21,14 @@ a {
   display: block;
 }
 
- /*PROJECT 2*/
+
+/* ==========================================
+   PROJECT 2 - Table/Scoring System
+   ========================================== */
 
 body {
   font-family: Arial, sans-serif;
+  color: #333;
   min-height: 100vh;
   padding: 20px;
   background: #f5f5f5;
@@ -29,12 +36,29 @@ body {
 
 h1 {
   color: #333;
+  font-size: 28px;
   margin-bottom: 20px;
   text-align: center;
   font-weight: 600;
   text-shadow: none;
+  border-bottom: 3px solid #ffeb3b;
+  padding-bottom: 10px;
 }
 
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+div {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+/* Table Styling */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -58,8 +82,8 @@ th {
   padding: 12px;
   display: table-cell;
   vertical-align: middle;
+  font-size: 18px;
 }
-
 
 tbody tr:first-child {
   border-top: 2px solid #333;
@@ -69,6 +93,7 @@ tbody tr:last-child {
   border-bottom: 2px solid #333;
 }
 
+/* Input Styling */
 input[type="number"],
 input[type="text"] {
   width: 100%;
@@ -81,6 +106,7 @@ input[type="text"] {
   box-sizing: border-box;
 }
 
+/* Cell Styling */
 .score-label {
   font-weight: 600;
   color: #333;
@@ -95,65 +121,25 @@ input[type="text"] {
   padding: 0;
 }
 
-/*PROJECT 3*/
 
-    table {
-      width: 40%;
-      margin: 20px;
-      font-family: Arial;
-     }
-    th {
-      font-size: 18px;
-      padding: 10px;
-    }
+/* ==========================================
+   PROJECT 3 - Time Table
+   ========================================== */
 
-    th, td {
-      border: solid 2px #000000;
-      padding; 10px 10px
-      margin: 20px;
-      text-align: center;
-    }    
-
-    .time{
-      width: 40%;
-      background-color: lightblue;
-    }
-
-    #row {
-      background-color: lightgreen;
-    }
-    
-/* PROJECT 2 */
-body {
-  font-family: Arial, sans-serif;
-  color: #333;
-  background-color: whitesmoke;
-  padding: 20px;
+.time {
+  width: 40%;
+  background-color: lightblue;
 }
 
-p {
-  font-size: 18px;
-  margin: 10px 0;
+#row {
+  background-color: lightgreen;
 }
 
-/*styling the main content*/
-div {
-  max-width: 800px;
-  margin: 0 auto;
-  background-color: white;
-  padding: 30px;
-  border-radius: 8px;
-}
 
-h1 {
-  color: black;
-  font-size: 28px;
-  margin-bottom: 20px;
-  border-bottom: 3px solid #ffeb3b;
-  padding-bottom: 10px;
-}
+/* ==========================================
+   PROJECT 4 - Ordered List with Custom Counters
+   ========================================== */
 
-/*styling the list*/
 ol {
   counter-reset: item;
   list-style: none;
