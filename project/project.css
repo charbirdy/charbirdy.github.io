@@ -99,7 +99,7 @@ body {
   color: #374151;
   font-size: 15px;
   display: flex;
-  grid-template-columns: repeat(3, 1fr);
+  flex-direction: column;
   gap: 20px; 
 }
 }
