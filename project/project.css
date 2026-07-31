@@ -245,18 +245,3 @@ img { max-width: 100%; height: auto; }
     100% { color: #blue; }
 }
 
-.section-header {
-  display: flex;
-  align-items: center;     
-  gap: 12px;
-}
-.section-header h2 {
-  margin: 0;
-  font-size: 1.25rem;
-  color: #063b85;
-}
-.section-header .header-icon {
-  flex-shrink: 0;   
-  margin-left: auto; 
-  display: block;
-}
