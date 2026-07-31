@@ -159,6 +159,12 @@ table.project-table {
   text-align: center;
 }
 
+.project-table .time {
+  width: 140px;
+  white-space: nowrap;
+  text-align: center;
+}
+
 /* Custom ordered list counter styling (scoped) */
 ol.custom-counter {
   counter-reset: item;
