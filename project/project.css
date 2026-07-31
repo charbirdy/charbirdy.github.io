@@ -31,13 +31,14 @@ body {
   font-size: 28px;
   color: #063b85;
   letter-spacing: -0.5px;
-  margin-bottom: 6px;
-  border-bottom: 3px solid #063b85;
-  padding-bottom: 10px;
+ 
 }
 .site-header p.subtle {
   color: #475569;
   font-size: 15px;
+   margin-bottom: 6px;
+  border-bottom: 3px solid #063b85;
+  padding-bottom: 10px;
 }
 
 /* Navigation links */
