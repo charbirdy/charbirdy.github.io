@@ -307,3 +307,30 @@ img {
   .project-page form { padding: 16px; }
   .project-page .submit-row { justify-content: center; }
 }
+
+:root{
+  /* Brand */
+  --color-primary: #0B659F;
+  --color-primary-2: #0B83B0;
+  --color-accent: #FFEB3B;
+  --color-strong: #0B4A6F;
+
+  /* Text */
+  --color-text: #1F2937;
+  --color-text-strong: #0F172A;
+  --color-muted: #4B5563;
+
+  /* Surfaces & backgrounds */
+  --color-surface: #FFFFFF;
+  --color-bg-soft: #F7FBFF;
+  --color-bg-alt: #F5F7FA;
+
+  /* Borders */
+  --color-border: #CBD5E1;
+  --color-edge: #E6EDF3;
+
+  /* States */
+  --color-success: #10B981;
+  --color-danger:  #EF4444;
+  --color-info:    #3B82F6;
+}
