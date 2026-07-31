@@ -1,176 +1,194 @@
 /* ==========================================
-   PROJECT 1 - Fixed Box Styling
+   PROJECT STYLES - cleaned & scoped for project pages
    ========================================== */
 
-h2, h3 {
-  color: lightblue;
-}
-
-.fixed-box {
-  position: fixed;
-  right: 0px;
-  bottom: 20px;
-  width: 150px;
-  height: 50px;
-  border: 3px dashed lightblue;
-  background-color: white;
-  text-align: center;
-}
-
-a {
-  display: block;
-}
-
-
-/* ==========================================
-   PROJECT 2 - Table/Scoring System
-   ========================================== */
+/* Reset / base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; }
 
 body {
-  font-family: Arial, sans-serif;
-  color: #333;
-  min-height: 100vh;
-  padding: 20px;
-  background: #f5f5f5;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #1f2937; /* dark gray */
+  background: linear-gradient(180deg, #f7fbff 0%, #f5f7fa 100%);
+  -webkit-font-smoothing:antialiased;
+  line-height: 1.5;
+  padding: 24px;
 }
 
-h1 {
-  color: #333;
-  font-size: 28px;
-  margin-bottom: 20px;
-  text-align: center;
-  font-weight: 600;
-  text-shadow: none;
-  border-bottom: 3px solid #ffeb3b;
-  padding-bottom: 10px;
-}
-
-p {
-  font-size: 18px;
-  margin: 10px 0;
-}
-
-div {
-  max-width: 800px;
+/* Page container — scoped so other pages are unaffected */
+.container {
+  max-width: 920px;
   margin: 0 auto;
-  background-color: white;
-  padding: 30px;
-  border-radius: 8px;
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(30,41,59,0.06);
+  border: 1px solid rgba(30,41,59,0.04);
 }
 
-/* Table Styling */
-table {
+/* Header */
+.site-header {
+  text-align: center;
+  margin-bottom: 18px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #ffeb3b;
+}
+.site-header h1 {
+  font-size: 28px;
+  color: #0b4a6f;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+.site-header p.subtle {
+  color: #4b5563;
+  font-size: 15px;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+.nav-links a {
+  text-decoration: none;
+  background: #0b659f;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(11,101,159,0.16);
+  transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+}
+.nav-links a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(11,101,159,0.12);
+}
+
+/* Members list */
+.members {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+/* Individual member card */
+.member {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 16px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(245,249,255,0.6), rgba(255,255,255,0.4));
+  border: 1px solid rgba(15,23,42,0.04);
+  box-shadow: 0 3px 10px rgba(2,6,23,0.03);
+}
+.member img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  border: 2px solid rgba(11,101,159,0.06);
+}
+.member-content h2 {
+  color: #0b4a6f;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.member-content p {
+  color: #374151;
+  font-size: 15px;
+}
+
+/* subtle separators */
+.member + .member { margin-top: 0; }
+
+/* Decorative fixed box (bottom-right) */
+.fixed-box {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: auto;
+  min-width: 140px;
+  max-width: 220px;
+  height: auto;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: linear-gradient(90deg,#0b659f,#0b83b0);
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(11,101,159,0.18);
+  border: none;
+  font-weight: 700;
+  z-index: 120;
+}
+.fixed-box a { color: white; text-decoration: none; display: inline-block; }
+.fixed-box p { margin: 0; font-size: 14px; }
+
+/* Responsive behavior */
+@media (max-width: 700px) {
+  .member {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .member img {
+    width: 200px;
+    height: 200px;
+  }
+  .member-content { width: 100%; }
+  .nav-links { gap: 6px; }
+}
+
+/* ====== Kept / Scoped styles for other project pages (minimal impact) ====== */
+/* Tables */
+.table-wrap { overflow:auto; }
+table.project-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
-  background: white;
-  border: 2px solid #333;
+  margin-top: 18px;
+  border: 1px solid #cbd5e1;
 }
-
-th, td {
-  border: 1px solid #333;
-  padding: 0;
+.project-table th, .project-table td {
+  border: 1px solid #e6edf3;
+  padding: 10px;
   text-align: center;
-  height: 50px;
-  width: auto;
 }
 
-th {
-  background-color: #333;
-  color: white;
-  font-weight: 600;
-  padding: 12px;
-  display: table-cell;
-  vertical-align: middle;
-  font-size: 18px;
-}
-
-tbody tr:first-child {
-  border-top: 2px solid #333;
-}
-
-tbody tr:last-child {
-  border-bottom: 2px solid #333;
-}
-
-/* Input Styling */
-input[type="number"],
-input[type="text"] {
-  width: 100%;
-  height: 100%;
-  padding: 8px;
-  border: none;
-  border-radius: 0;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  box-sizing: border-box;
-}
-
-/* Cell Styling */
-.score-label {
-  font-weight: 600;
-  color: #333;
-  background-color: #f5f5f5;
-  padding: 0;
-}
-
-.total-cell {
-  font-weight: 700;
-  background-color: #f5f5f5;
-  color: #333;
-  padding: 0;
-}
-
-
-/* ==========================================
-   PROJECT 3 - Time Table
-   ========================================== */
-
-.time {
-  width: 40%;
-  background-color: lightblue;
-}
-
-#row {
-  background-color: lightgreen;
-}
-
-
-/* ==========================================
-   PROJECT 4 - Ordered List with Custom Counters
-   ========================================== */
-
-ol {
+/* Custom ordered list counter styling (scoped) */
+ol.custom-counter {
   counter-reset: item;
   list-style: none;
-  padding: 0;
+  padding-left: 0;
 }
-
-ol li {
+ol.custom-counter li {
   counter-increment: item;
-  margin-bottom: 20px;
-  padding-left: 40px;
+  margin-bottom: 14px;
+  padding-left: 48px;
   position: relative;
 }
-
-ol li:before {
+ol.custom-counter li:before {
   content: counter(item);
   position: absolute;
   left: 0;
   background-color: #ffeb3b;
   color: #333;
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
+  font-weight: 700;
 }
 
+/* Images */
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 5px;
-  margin: 15px 0;
+  border-radius: 6px;
 }
