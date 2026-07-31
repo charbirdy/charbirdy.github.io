@@ -1,4 +1,3 @@
-/* Reset / Base */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body { height: 100%; }
 
@@ -11,7 +10,6 @@ body {
   padding: 24px;
 }
 
-/* Page container (scoped) */
 .container {
   max-width: 920px;
   margin: 0 auto;
@@ -102,7 +100,6 @@ body {
   flex-direction: column;
   gap: 20px; 
 }
-}
 
 /* Floating action / fixed box */
 .fixed-box {
@@ -139,7 +136,7 @@ table.project-table {
 }
 .project-table .time { width: 140px; white-space: nowrap; }
 
-/* Ordered list counter (scoped) */
+/* Ordered list counter */
 ol.custom-counter {
   counter-reset: item;
   list-style: none;
