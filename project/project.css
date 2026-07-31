@@ -104,7 +104,6 @@ body {
   gap: 20px; 
 }
 
-/* Floating action / fixed box */
 .fixed-box {
   position: fixed;
   right: 18px;
@@ -138,33 +137,6 @@ table.project-table {
   text-align: center;
 }
 .project-table .time { width: 140px; white-space: nowrap; }
-
-/* Ordered list */
-ul.custom-counter {
-  counter-reset: item;
-  list-style: none;
-  padding-left: 0;
-}
-ul.custom-counter li {
-  counter-increment: item;
-  margin-bottom: 14px;
-  padding-left: 48px;
-  position: relative;
-}
-ul.custom-counter li:before {
-  content: counter(item);
-  position: absolute;
-  left: 0;
-  background-color: #bfdbfe;
-  color: #063b85;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-}
 
 /* Images */
 img { max-width: 100%; height: auto; }
