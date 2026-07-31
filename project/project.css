@@ -231,3 +231,15 @@ img { max-width: 100%; height: auto; }
   .nav-links { gap: 6px; }
   .container .submit-row { justify-content: center; }
 }
+
+.animated-text {
+    animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+    0% { color: blue; }
+    25% { color: #063b85; }
+    50% { color: #blue; }
+    75% { color: #063b85; }
+    100% { color: #blue; }
+}
