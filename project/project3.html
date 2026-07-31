@@ -7,67 +7,71 @@
   <link rel="stylesheet" href="project.css" />
 </head>
 <body>
-     <nav class="nav-links" aria-label="Project navigation">
-      <a href="projectmain.html" target="_self" rel="noopener noreferrer">Main Page</a>
-      <a href="project1.html" target="_self" rel="noopener noreferrer">Page 1</a>
-      <a href="project2.html" target="_self" rel="noopener noreferrer">Page 2</a>
-      <a href="project4.html" target="_self" rel="noopener noreferrer">Page 4</a>
-      <a href="project5.html" target="_self" rel="noopener noreferrer">Page 5</a>
-    </nav>
   <div class="container">
     <header class="site-header">
       <h1>Schedule</h1>
+      <nav class="nav-links" aria-label="Project navigation">
+        <a href="projectmain.html" rel="noopener noreferrer">Main Page</a>
+        <a href="project1.html" rel="noopener noreferrer">Page 1</a>
+        <a href="project2.html" rel="noopener noreferrer">Page 2</a>
+        <a href="project4.html" rel="noopener noreferrer">Page 4</a>
+        <a href="project5.html" rel="noopener noreferrer">Page 5</a>
+      </nav>
     </header>
 
-    <div class="table-wrap">
-      <table class="project-table">
-        <colgroup>
-          <col class="time">
-        </colgroup>
+    <main>
+      <div class="table-wrap">
+        <table class="project-table" aria-describedby="schedule-desc">
+          <caption id="schedule-desc" style="caption-side:top; text-align:left; padding-bottom:8px; font-weight:700;">Daily schedule</caption>
+          <colgroup>
+            <col class="time">
+          </colgroup>
 
-        <thead>
-          <tr>
-            <th>Time</th>
-            <th>To Do</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="time">8:00 AM</td>
-            <td>Wake up</td>
-          </tr>
-          <tr>
-            <td class="time">8:15 AM</td>
-            <td>Eat Breakfast</td>
-          </tr>
-          <tr>
-            <td class="time">9:00 AM</td>
-            <td>Take a walk</td>
-          </tr>
-          <tr>
-            <td class="time">9:30 AM</td>
-            <td>Work</td>
-          </tr>
-          <tr id="row">
-            <td class="time">12:00 PM</td>
-            <td>Lunch</td>
-          </tr>
-          <tr>
-            <td class="time">1:00 PM</td>
-            <td>Work</td>
-          </tr>
-          <tr>
-            <td class="time">5:00 PM</td>
-            <td>Do laundry</td>
-          </tr>
-          <tr>
-            <td class="time">8:00 PM</td>
-            <td>Dinner</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+          <thead>
+            <tr>
+              <th scope="col">Time</th>
+              <th scope="col">To Do</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="time">8:00 AM</td>
+              <td>Wake up</td>
+            </tr>
+            <tr>
+              <td class="time">8:15 AM</td>
+              <td>Eat breakfast</td>
+            </tr>
+            <tr>
+              <td class="time">9:00 AM</td>
+              <td>Take a walk</td>
+            </tr>
+            <tr>
+              <td class="time">9:30 AM</td>
+              <td>Work</td>
+            </tr>
+            <tr id="row">
+              <td class="time">12:00 PM</td>
+              <td>Lunch</td>
+            </tr>
+            <tr>
+              <td class="time">1:00 PM</td>
+              <td>Work</td>
+            </tr>
+            <tr>
+              <td class="time">5:00 PM</td>
+              <td>Do laundry</td>
+            </tr>
+            <tr>
+              <td class="time">8:00 PM</td>
+              <td>Dinner</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
 
+    <footer style="margin-top:18px; text-align:center; color:#6b7280; font-size:14px;">&copy; Little Critters</footer>
   </div>
 </body>
 </html>

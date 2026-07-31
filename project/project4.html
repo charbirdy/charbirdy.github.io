@@ -1,98 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <p>Game</p>
-    <link rel="stylesheet" href="project.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link rel="stylesheet" href="project.css">
 </head>
-    <div>
-    <body>
-    <h1>GAME</h1>
-    <nav class="nav-links" aria-label="Project navigation">
-  <p><a href="projectmain.html" target="_self" rel="noopener noreferrer">Main Page</a>
-  <p><a href="project1.html" target="_self" rel="noopener noreferrer">Page 1</a></p>
-  <p><a href="project2.html" target="_self" rel="noopener noreferrer">Page 2</a></p>
-  <p><a href="project3.html" target="_self" rel="noopener noreferrer">Page 3</a></p>
-  <p><a href="project5.html" target="_self" rel="noopener noreferrer">Page 5</a></p>
-</nav>
-    <table>
-      <thead>
-        <tr>
-          <th>Player</th>
-          <th>1</th>
-          <th>2</th>
-          <th>3</th>
-          <th>4</th>
-          <th>5</th>
-          <th>6</th>
-          <th>7</th>
-          <th>8</th>
-          <th>9</th>
-          <th>10</th>
-          <th>Total</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="score-label"><input type="text" placeholder="Player 1"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td class="total-cell"><input type="text" placeholder="0"></td>
-        </tr>
-        <tr>
-          <td class="score-label"><input type="text" placeholder="Player 2"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td class="total-cell"><input type="text" placeholder="0"></td>
-        </tr>
-        <tr>
-          <td class="score-label"><input type="text" placeholder="Player 3"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td class="total-cell"><input type="text" placeholder="0"></td>
-        </tr>
-        <tr>
-          <td class="score-label"><input type="text" placeholder="Player 4"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td><input type="number" placeholder="0"></td>
-          <td class="total-cell"><input type="text" placeholder="0"></td>
-        </tr>
-      </tbody>
-    </table>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <h1>Game</h1>
+      <nav class="nav-links" aria-label="Project navigation">
+        <a href="projectmain.html" rel="noopener noreferrer">Main Page</a>
+        <a href="project1.html" rel="noopener noreferrer">Page 1</a>
+        <a href="project2.html" rel="noopener noreferrer">Page 2</a>
+        <a href="project3.html" rel="noopener noreferrer">Page 3</a>
+        <a href="project5.html" rel="noopener noreferrer">Page 5</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="table-wrap">
+        <table class="project-table" aria-label="Game scores">
+          <thead>
+            <tr>
+              <th>Player</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+              <th>10</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Keep inputs for manual scoring; total cells are readonly for clarity -->
+            <tr>
+              <td class="score-label"><input type="text" placeholder="Player 1" aria-label="Player 1 name"></td>
+              <td><input type="number" placeholder="0" aria-label="Round 1 score"></td>
+              <td><input type="number" placeholder="0" aria-label="Round 2 score"></td>
+              <td><input type="number" placeholder="0" aria-label="Round 3 score"></td>
+              <td><input type="number" placeholder="0" aria-label="Round 4 score"></td>
+              <td><input type="number" placeholder="0" aria-label="Round 5 score"></td>
+              <td><input type="number" placeholder="0" aria-label="Round 6 score"></td>
+              <td><input type="number" placeholder="0" aria-label="Round 7 score"></td>
+              <td><input type="number" placeholder="0" aria-label="Round 8 score"></td>
+              <td><input type="number" placeholder="0" aria-label="Round 9 score"></td>
+              <td><input type="number" placeholder="0" aria-label="Round 10 score"></td>
+              <td class="total-cell"><input type="text" placeholder="0" aria-label="Total score" readonly></td>
+            </tr>
+            <!-- Repeat rows for other players -->
+            <tr>
+              <td class="score-label"><input type="text" placeholder="Player 2" aria-label="Player 2 name"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td class="total-cell"><input type="text" placeholder="0" readonly></td>
+            </tr>
+            <tr>
+              <td class="score-label"><input type="text" placeholder="Player 3" aria-label="Player 3 name"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td class="total-cell"><input type="text" placeholder="0" readonly></td>
+            </tr>
+            <tr>
+              <td class="score-label"><input type="text" placeholder="Player 4" aria-label="Player 4 name"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td><input type="number" placeholder="0"></td>
+              <td class="total-cell"><input type="text" placeholder="0" readonly></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer style="margin-top:18px; text-align:center; color:#6b7280; font-size:14px;">&copy; Little Critters</footer>
+  </div>
 </body>
-
-
-    </div>
+</html>

@@ -1,75 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="project.css">
-    <title>Form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join the team</title>
+  <link rel="stylesheet" href="project.css">
 </head>
-<div>
-    <nav class="nav-links" aria-label="Project navigation">
-  <p><a href="projectmain.html" target="_self" rel="noopener noreferrer">Main Page</a></p>
-  <p><a href="project1.html" target="_self" rel="noopener noreferrer">Page 1</a></p>
-  <p><a href="project2.html" target="_self" rel="noopener noreferrer">Page 2</a></p>
-  <p><a href="project3.html" target="_self" rel="noopener noreferrer">Page 3</a></p>
-  <p><a href="project4.html" target="_self" rel="noopener noreferrer">Page 4</a></p>
-</nav>
-    <p>If you wish to fill out this form physically, click here</p>
-        <p><a href="documents/article.pdf" target="_blank" rel="noopener noreferrer">Physical Form</a></p>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <h1>Join the team</h1>
+      <nav class="nav-links" aria-label="Project navigation">
+        <a href="projectmain.html" rel="noopener noreferrer">Main Page</a>
+        <a href="project1.html" rel="noopener noreferrer">Page 1</a>
+        <a href="project2.html" rel="noopener noreferrer">Page 2</a>
+        <a href="project3.html" rel="noopener noreferrer">Page 3</a>
+        <a href="project4.html" rel="noopener noreferrer">Page 4</a>
+      </nav>
+    </header>
 
-    <form>
-  Name:<br/>
-  <input type="text">
-</form>
-<!--Test Start-->
-<form>
-  <fieldset>
-    <legend>Question 1</legend>
-    <p>What is 5 &times; 5?</p>
-    <input type="radio" name="math1" value="wrong">
-    15<br/>
-    <input type="radio" name="math1" value="wrong">
-    20<br/>
-    <input type="radio" name="math1" value="correct">
-    25<br/>
-    <input type="radio" name="math1" value="wrong">
-    30
-  </fieldset>
-  <fieldset>
-    <legend>Question 2</legend>
-    <p>What is 144 &divide; 12?</p>
-    <input type="radio" name="math2" value="correct">
-    12<br/>
-    <input type="radio" name="math2" value="wrong">
-    13<br/>
-    <input type="radio" name="math2" value="wrong">
-    14<br/>
-    <input type="radio" name="math2" value="wrong">
-    15
-  </fieldset>
-    <fieldset>
-    <legend>Question 3</legend>
-    <p>Simplify &radic; 64</p>
-    <input type="radio" name="math3" value="wrong">
-    7<br/>
-    <input type="radio" name="math3" value="correct">
-    8<br/>
-    <input type="radio" name="math3" value="wrong">
-    9<br/>
-    <input type="radio" name="math3" value="wrong">
-    10
-  </fieldset>
-    <fieldset>
-        <input type="checkbox" id="newsletter" name="newsletter" value="yes" checked>
-<label for="newsletter">Subscribe to newsletter</label>
-    </fieldset>
-  <fieldset>
-    <legend>Question 4</legend>
-    What is the defition of Pi (&pi;)?<br />
-<textarea></textarea>
-  </fieldset>
-</form>
-<button type="submit">Submit</button>
-<!--Test End-->
+    <main>
+      <p>If you prefer a printable version of the form, you can open the physical form here:</p>
+      <p><a href="documents/article.pdf" target="_blank" rel="noopener noreferrer">Physical Form (PDF)</a></p>
 
-</div>
+      <form aria-label="Join the team form">
+        <div style="margin-bottom:12px;">
+          <label for="name">Name:</label><br>
+          <input id="name" name="name" type="text" required>
+        </div>
+
+        <fieldset>
+          <legend>Questions</legend>
+
+          <p>1) What is 5 × 5?</p>
+          <label><input type="radio" name="math1" value="15"> 15</label><br>
+          <label><input type="radio" name="math1" value="20"> 20</label><br>
+          <label><input type="radio" name="math1" value="25"> 25</label><br>
+          <label><input type="radio" name="math1" value="30"> 30</label>
+
+          <p>2) What is 144 ÷ 12?</p>
+          <label><input type="radio" name="math2" value="12"> 12</label><br>
+          <label><input type="radio" name="math2" value="13"> 13</label><br>
+          <label><input type="radio" name="math2" value="14"> 14</label><br>
+          <label><input type="radio" name="math2" value="15"> 15</label>
+
+          <p>3) Simplify √64</p>
+          <label><input type="radio" name="math3" value="7"> 7</label><br>
+          <label><input type="radio" name="math3" value="8"> 8</label><br>
+          <label><input type="radio" name="math3" value="9"> 9</label><br>
+          <label><input type="radio" name="math3" value="10"> 10</label>
+
+          <p>
+            <label><input type="checkbox" id="newsletter" name="newsletter" value="yes" checked> Subscribe to newsletter</label>
+          </p>
+
+          <p>4) What is the definition of Pi (π)?</p>
+          <textarea name="pi_definition" rows="4" cols="40" placeholder="Write your answer here"></textarea>
+        </fieldset>
+
+        <div style="margin-top:12px; text-align:right;">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+
+    <footer style="margin-top:18px; text-align:center; color:#6b7280; font-size:14px;">&copy; Little Critters</footer>
+  </div>
+</body>
+</html>

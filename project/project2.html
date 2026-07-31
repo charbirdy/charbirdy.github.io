@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <p>Charlotte Byrdy</p>
-    <link rel="stylesheet" href="project.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Embed a Service-Hosted Video</title>
+  <link rel="stylesheet" href="project.css">
 </head>
-<div>
-  <h1>How to Embed A Service-Hosted Video Into A Website</h1>
-    <nav class="nav-links" aria-label="Project navigation">
-  <p><a href="projectmain.html" target="_self" rel="noopener noreferrer">Main Page</a>
-  <p><a href="project1.html" target="_self" rel="noopener noreferrer">Page 1</a>
-  <p><a href="project3.html" target="_self" rel="noopener noreferrer">Page 3</a>
-  <p><a href="project4.html" target="_self" rel="noopener noreferrer">Page 4</a>
-  <p><a href="project5.html" target="_self" rel="noopener noreferrer">Page 5</a>
-</nav>
-  <p>In this very simple tutorial, you'll be shown how to insert a video into your website. For this example, a youtube video will be used and GitHub will be the website editor. Any other service will work the same. Note that some creators won't allow their video to be used outside that service, so this won't work for every video. Look for the yellow box to navigate where to go.</p>
-<ol>
-  <li>Get your video ready and look for the "share" option right under the video. This will include the embed code you'll need for your website.</li>
-  <img src="pics/guineapig1.png" alt="pic1" width="500">
-  <li>Look for the "embed" button, which should be the first, and click on that.</li>
-  <img src="pics/guineapig2.png" alt="pic2" width="500">
-  <li>Once clicked, a window will pop up. To the right is the embed code. On the bottom right is the "copy" button. Click it so that it'll be copied to your clipboard. The video contents will always be in an "&lt;iframe&gt;" tag. </li>
-  <img src="pics/guineapig3.png" alt="pic3" width="500">
-  <li>Once copied, open up your website editor and simply paste the link. Then, click "commit changes" or whatever button confirms your edits. Your website will update to its current state.</li>
-  <img src="pics/guineapig4.png" alt="pic4" width="500">
-  <li>Wait for your website to process the changes. After that, your video should be in your designated website.</li>
-  <img src="pics/guineapig5.png" alt="pic5" width="500">
-</ol>
-  <p>And that's it! Enjoy some cute guinea pigs.</p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/pzYepqSPgLY?si=CpwbRpN3nihB4sT6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <h1>How to Embed a Service-Hosted Video Into a Website</h1>
+      <nav class="nav-links" aria-label="Project navigation">
+        <a href="projectmain.html" rel="noopener noreferrer">Main Page</a>
+        <a href="project1.html" rel="noopener noreferrer">Page 1</a>
+        <a href="project3.html" rel="noopener noreferrer">Page 3</a>
+        <a href="project4.html" rel="noopener noreferrer">Page 4</a>
+        <a href="project5.html" rel="noopener noreferrer">Page 5</a>
+      </nav>
+    </header>
+
+    <main>
+      <p>In this simple tutorial you'll learn how to insert a video (e.g., YouTube) into your website using the service's embed code.</p>
+
+      <ol>
+        <li>Open the video you want to embed and click the "Share" button beneath the video.</li>
+        <li>Choose "Embed" from the sharing options and copy the provided HTML iframe code.</li>
+        <li>Paste the iframe snippet into your website editor where you want the video to appear.</li>
+        <li>Save or commit your changes and publish the site if required by your hosting service.</li>
+        <li>Wait for the hosting service to process the update, then verify the video appears on the page.</li>
+      </ol>
+
+      <p>Here's an example embedded video:</p>
+      <div style="max-width:560px; margin:12px 0;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pzYepqSPgLY" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <p>Enjoy the tutorial and some cute guinea pigs!</p>
+
+    </main>
+
+    <footer style="margin-top:18px; text-align:center; color:#6b7280; font-size:14px;">&copy; Charlotte Byrdy</footer>
+  </div>
+</body>
+</html>
