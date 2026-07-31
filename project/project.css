@@ -32,13 +32,6 @@ body {
   color: #063b85;
   letter-spacing: -0.5px;
   margin-bottom: 6px;
-  @keyframes myAnimation {
-      border-bottom: 3px solid #bfdbfe;
-      from { color: 063b85; }
-      to { color: blue; } 
-    animation-name: myAnimation;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
 }
 .site-header p.subtle {
   color: #475569;
