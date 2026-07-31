@@ -32,6 +32,8 @@ body {
   color: #063b85;
   letter-spacing: -0.5px;
   margin-bottom: 6px;
+  border-bottom: 3px solid #063b85;
+  padding-bottom: 10px;
 }
 .site-header p.subtle {
   color: #475569;
