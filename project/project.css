@@ -139,19 +139,19 @@ table.project-table {
 }
 .project-table .time { width: 140px; white-space: nowrap; }
 
-/* Ordered list counter */
-ol.custom-counter {
+/* Ordered list */
+ul.custom-counter {
   counter-reset: item;
   list-style: none;
   padding-left: 0;
 }
-ol.custom-counter li {
+ul.custom-counter li {
   counter-increment: item;
   margin-bottom: 14px;
   padding-left: 48px;
   position: relative;
 }
-ol.custom-counter li:before {
+ul.custom-counter li:before {
   content: counter(item);
   position: absolute;
   left: 0;
