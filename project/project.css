@@ -1,158 +1,194 @@
-:root{
-  /* Bluewave Titans palette */
-  --team-navy: #072743;
-  --team-blue: #0077CC;
-  --team-gold: #FFCC00;
-  --team-slate: #1F2937;
-  --team-light: #F7FBFF;
-  --accent-glow: rgba(0,119,204,0.14);
-  --card-gradient: linear-gradient(180deg, rgba(0,119,204,0.07), rgba(7,39,67,0.02));
-  --jersey-gradient: linear-gradient(90deg, rgba(0,119,204,0.12), rgba(7,39,67,0.03));
-}
+/* ==========================================
+   PROJECT STYLES - cleaned & scoped for project pages
+   ========================================== */
 
-/* Typography (prefer loading Oswald + Inter/Roboto in your page head) */
+/* Reset / base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; }
+
 body {
-  color: var(--team-slate);
-  background: linear-gradient(180deg, var(--team-light) 0%, #eef6ff 100%);
-  font-family: "Inter", "Roboto", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #1f2937; /* dark gray */
+  background: linear-gradient(180deg, #f7fbff 0%, #f5f7fa 100%);
+  -webkit-font-smoothing:antialiased;
+  line-height: 1.5;
+  padding: 24px;
 }
 
-/* Header — big sport-banner */
-.site-header {
-  background: linear-gradient(90deg, rgba(0,119,204,0.06), rgba(7,39,67,0.03));
-  border-bottom: 4px solid var(--team-gold);
-  padding: 18px 12px;
+/* Page container — scoped so other pages are unaffected */
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 28px;
   border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(30,41,59,0.06);
+  border: 1px solid rgba(30,41,59,0.04);
+}
+
+/* Header */
+.site-header {
+  text-align: center;
+  margin-bottom: 18px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #ffeb3b;
 }
 .site-header h1 {
-  color: var(--team-navy);
-  font-family: "Oswald", "Helvetica Neue", Arial, sans-serif;
-  letter-spacing: 0.6px;
-  font-size: 30px;
-  text-transform: uppercase;
+  font-size: 28px;
+  color: #0b4a6f;
+  letter-spacing: -0.5px;
   margin-bottom: 6px;
 }
 .site-header p.subtle {
-  color: var(--team-navy);
-  font-weight: 600;
+  color: #4b5563;
+  font-size: 15px;
 }
 
-/* Nav links — look like jersey tabs */
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
 .nav-links a {
-  background: linear-gradient(180deg, var(--team-blue), #005ea0);
-  color: white;
-  padding: 10px 14px;
-  border-radius: 999px;
-  box-shadow: 0 6px 18px var(--accent-glow);
-  border: 2px solid rgba(255,204,0,0.06);
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 13px;
+  text-decoration: none;
+  background: #0b659f;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(11,101,159,0.16);
+  transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
 }
 .nav-links a:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 10px 28px rgba(0,119,204,0.18);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(11,101,159,0.12);
 }
 
-/* Member / player cards — sporty, with jersey number */
+/* Members list */
+.members {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+/* Individual member card */
 .member {
-  background: var(--card-gradient);
-  border: 2px solid rgba(7,39,67,0.06);
-  box-shadow: 0 6px 20px rgba(7,39,67,0.06);
-  padding: 18px;
-  border-radius: 12px;
-  position: relative;
-  overflow: visible;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 16px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(245,249,255,0.6), rgba(255,255,255,0.4));
+  border: 1px solid rgba(15,23,42,0.04);
+  box-shadow: 0 3px 10px rgba(2,6,23,0.03);
 }
 .member img {
   width: 160px;
   height: 160px;
   object-fit: cover;
   border-radius: 8px;
-  border: 4px solid rgba(255,255,255,0.06);
-  box-shadow: 0 6px 18px rgba(0,119,204,0.08);
+  flex-shrink: 0;
+  border: 2px solid rgba(11,101,159,0.06);
+}
+.member-content h2 {
+  color: #0b4a6f;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.member-content p {
+  color: #374151;
+  font-size: 15px;
 }
 
-/* Jersey number badge (use data-number attribute on .member or .member-content if you want numbers) */
-.member::after {
-  content: attr(data-number);
+/* subtle separators */
+.member + .member { margin-top: 0; }
+
+/* Decorative fixed box (bottom-right) */
+.fixed-box {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: auto;
+  min-width: 140px;
+  max-width: 220px;
+  height: auto;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: linear-gradient(90deg,#0b659f,#0b83b0);
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(11,101,159,0.18);
+  border: none;
+  font-weight: 700;
+  z-index: 120;
+}
+.fixed-box a { color: white; text-decoration: none; display: inline-block; }
+.fixed-box p { margin: 0; font-size: 14px; }
+
+/* Responsive behavior */
+@media (max-width: 700px) {
+  .member {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .member img {
+    width: 200px;
+    height: 200px;
+  }
+  .member-content { width: 100%; }
+  .nav-links { gap: 6px; }
+}
+
+/* ====== Kept / Scoped styles for other project pages (minimal impact) ====== */
+/* Tables */
+.table-wrap { overflow:auto; }
+table.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+  border: 1px solid #cbd5e1;
+}
+.project-table th, .project-table td {
+  border: 1px solid #e6edf3;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Custom ordered list counter styling (scoped) */
+ol.custom-counter {
+  counter-reset: item;
+  list-style: none;
+  padding-left: 0;
+}
+ol.custom-counter li {
+  counter-increment: item;
+  margin-bottom: 14px;
+  padding-left: 48px;
+  position: relative;
+}
+ol.custom-counter li:before {
+  content: counter(item);
   position: absolute;
-  top: -12px;
-  left: -12px;
-  background: var(--team-gold);
-  color: #072743;
-  width: 56px;
-  height: 56px;
+  left: 0;
+  background-color: #ffeb3b;
+  color: #333;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 900;
-  font-family: "Oswald", sans-serif;
-  font-size: 18px;
-  box-shadow: 0 6px 18px rgba(7,39,67,0.12);
-  border: 3px solid white;
-}
-
-/* Member content */
-.member-content h2 {
-  color: var(--team-navy);
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  margin-bottom: 6px;
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-}
-.member-content p {
-  color: var(--team-slate);
-  font-size: 15px;
-}
-
-/* CTA fixed badge replaced with team badge */
-.fixed-box {
-  background: linear-gradient(90deg, var(--team-blue), var(--team-navy));
-  border-radius: 12px;
-  padding: 10px 14px;
-  min-width: 160px;
-  right: 18px;
-  bottom: 18px;
-  font-weight: 800;
-  box-shadow: 0 12px 40px rgba(7,39,67,0.18);
-}
-.fixed-box a, .fixed-box p { color: #fff; }
-
-/* Table accents */
-.project-table th {
-  background: linear-gradient(90deg, rgba(0,119,204,0.06), rgba(7,39,67,0.02));
-  color: var(--team-navy);
   font-weight: 700;
 }
-.project-table td {
-  padding: 12px;
-}
 
-/* Custom ordered list badges use team-gold */
-ol.custom-counter li:before {
-  background-color: var(--team-gold);
-  color: var(--team-navy);
-  box-shadow: 0 4px 12px rgba(7,39,67,0.08);
-}
-
-/* Buttons (utility) */
-.button-sport {
-  display: inline-block;
-  background: linear-gradient(90deg, var(--team-blue), var(--team-navy));
-  color: white;
-  padding: 10px 14px;
-  border-radius: 999px;
-  font-weight: 800;
-  text-transform: uppercase;
-  box-shadow: 0 10px 30px rgba(0,119,204,0.12);
-  border: 2px solid rgba(255,204,0,0.06);
-}
-
-/* Responsive tweaks */
-@media (max-width:700px) {
-  .member img { width: 220px; height: 220px; border-radius: 12px; }
-  .member::after { left: 50%; transform: translateX(-50%); top: -20px; }
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
 }
