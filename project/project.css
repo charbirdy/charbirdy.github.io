@@ -250,7 +250,11 @@ img { max-width: 100%; height: auto; }
   align-items: center;     
   gap: 12px;
 }
-
+.section-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #063b85;
+}
 .section-header .header-icon {
   flex-shrink: 0;   
   margin-left: auto; 
