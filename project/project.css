@@ -98,7 +98,7 @@ body {
 .member-content p {
   color: #374151;
   font-size: 15px;
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px; 
 }
