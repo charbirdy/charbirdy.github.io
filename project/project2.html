@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How to Embed a Service-Hosted Video</title>
+  <title>Meet the Coaches</title>
   <link rel="stylesheet" href="project.css">
 </head>
 <body>
   <div class="container">
     <header class="site-header">
-      <h1>How to Embed a Service-Hosted Video Into a Website</h1>
+      <h1>Meet the Coaches</h1>
       <nav class="nav-links" aria-label="Project navigation">
         <a href="projectmain.html" rel="noopener noreferrer">Main Page</a>
         <a href="project1.html" rel="noopener noreferrer">Page 1</a>
@@ -20,23 +20,49 @@
     </header>
 
     <main>
-      <p>In this simple tutorial you'll learn how to insert a video (e.g., YouTube) into your website using the service's embed code.</p>
+       <main>
+      <section class="members" aria-label="Team members">
+        <article class="member" id="seally">
+          <img src="image/seal.png" alt="Seally the seal" width="200" height="200" />
+          <div class="member-content">
+            <h2>Seally</h2>
+            <p>Seally is a seal who loves to play sports and is especially strong in swimming. She’s energetic at practices and encourages teammates during games.</p>
+          </div>
+        </article>
 
-      <ol>
-        <li>Open the video you want to embed and click the "Share" button beneath the video.</li>
-        <li>Choose "Embed" from the sharing options and copy the provided HTML iframe code.</li>
-        <li>Paste the iframe snippet into your website editor where you want the video to appear.</li>
-        <li>Save or commit your changes and publish the site if required by your hosting service.</li>
-        <li>Wait for the hosting service to process the update, then verify the video appears on the page.</li>
-      </ol>
+        <article class="member" id="bobby">
+          <img src="image/lobster.png" alt="Bobby the lobster" width="200" height="200" />
+          <div class="member-content">
+            <h2>Bobby</h2>
+            <p>Bobby is a competitive lobster with powerful claws. He plays hard, supports his friends, and enjoys relaxing on the shore after practice.</p>
+          </div>
+        </article>
 
-      <p>Here's an example embedded video:</p>
-      <div style="max-width:560px; margin:12px 0;">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/pzYepqSPgLY" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-      </div>
+        <article class="member" id="cappy">
+          <img src="image/capybara.png" alt="Cappy the capybara" width="200" height="200" />
+          <div class="member-content">
+            <h2>Cappy</h2>
+            <p>Cappy is calm and clever. He uses tactics to outsmart opponents and keeps the team steady with his relaxed attitude.</p>
+          </div>
+        </article>
 
-      <p>Enjoy the tutorial and some cute guinea pigs!</p>
+        <article class="member" id="octavia">
+          <img src="image/octopus.png" alt="Octavia the octopus" width="200" height="200" />
+          <div class="member-content">
+            <h2>Octavia</h2>
+            <p>Octavia is a quick multitasker who brings energy and creativity to practice. Her many talents help the team in unexpected ways.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer style="margin-top:18px; text-align:center; color:#6b7280; font-size:14px;">&copy; Little Critters</footer>
+  </div>
 
+  <div class="fixed-box" role="button" aria-label="Meet the members button">
+    <p><a href="projectmain.html" rel="noopener noreferrer">★ Back to Main</a></p>
+  </div>
+</body>
+</html>
     </main>
 
     <footer style="margin-top:18px; text-align:center; color:#6b7280; font-size:14px;">&copy; Charlotte Byrdy</footer>
